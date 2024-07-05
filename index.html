@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Invitación</title>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        background-image: url('https://i.postimg.cc/jj1FwjqW/PI.jpg');
+        background-size: cover;
+        background-position: center;
+        font-family: Mailand, demo-sample;
+        color: #4a4a4a; /* Cambia el color del texto */
+    }
+
+    .container {
+        text-align: center; /* Centra el contenido horizontalmente */
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .row {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px; /* Espacio entre las filas */
+    }
+
+    .column {
+        flex: 1; /* Ocupa todo el ancho disponible */
+        display: flex;
+        flex-direction: column;
+    }
+
+    .dropdown-container {
+        position: relative;
+        margin: 0 10px; /* Espaciado entre los contenedores de botones */
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        width: 160px; /* Ancho de la lista desplegable */
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        border-radius: 7px;
+        left: 50%; /* Centra horizontalmente la lista */
+        transform: translateX(-50%); /* Ajusta para centrar exactamente */
+    }
+
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #f1f1f1;
+    }
+
+    .btn {
+        background-color: #e8ab61; /* Color de fondo del botón */
+        color: #0b0b0b; /* Color del texto */
+        border: none; /* Quita el borde */
+        padding: 10px 20px; /* Espaciado interno */
+        font-size: 18px; /* Tamaño de fuente */
+        border-radius: 7px; /* Borde redondeado */
+        margin-bottom: 10px; /* Espacio entre botones */
+        cursor: pointer; /* Cambia el cursor al pasar el ratón */
+        transition: background-color 0.3s; /* Transición suave de color de fondo */
+    }
+
+    .btn:hover {
+        background-color: #a6773d; /* Cambia el color de fondo al pasar el ratón */
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <h1>‏‏‎ </h1>
+    <p>‏‏‎ </p>
+    <p>‏‏‎ </p>
+    <p>‏‏‎ </p>
+    <p>‏‏‎ </p>
+    <p>‏‏‎ </p>
+    <p>‏‏‎ </p>
+    <p>‏‏‎ </p>
+    <p>‏‏‎ </p>
+    
+    <div class="row">
+        <div class="column">
+            <div class="dropdown-container">
+                <button onclick="toggleDropdown('dropdown1')" class="btn">Preescolar</button>
+                <div id="dropdown1" class="dropdown-content">
+                    <a href="https://docs.google.com/spreadsheets/d/1ud9d35ScjUJl3CJ3ivPI76a7BzOV56uu/edit?usp=drive_link&ouid=103758885215504875722&rtpof=true&sd=true">Tercero A</a>
+                    <a href="https://docs.google.com/spreadsheets/d/1Sl6QHz8iwuujS3LjdoqLNKwlit97IEnE/edit?usp=sharing&ouid=103758885215504875722&rtpof=true&sd=true">Tercero B</a>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="dropdown-container">
+                <button onclick="toggleDropdown('dropdown2')" class="btn">Primaria</button>
+                <div id="dropdown2" class="dropdown-content">
+                    <a href="https://docs.google.com/spreadsheets/d/1dEiC3nBL_9Ggv51JlCaJtYF63qlv6cMk/edit?usp=sharing&ouid=103758885215504875722&rtpof=true&sd=true">Sexto A</a>
+                    <a href="https://docs.google.com/spreadsheets/d/1x_eqbHb61SdWob0NVnCYe3OagZyXVoyy/edit?usp=sharing&ouid=103758885215504875722&rtpof=true&sd=true">Sexto B</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="column">
+            <div class="dropdown-container">
+                <button onclick="toggleDropdown('dropdown3')" class="btn">Secundaria</button>
+                <div id="dropdown3" class="dropdown-content">
+                    <a href="https://docs.google.com/spreadsheets/d/1uj4GvDzbM1BdMqf5ho0qsQVzj9iy_UJo/edit?usp=drive_link&ouid=103758885215504875722&rtpof=true&sd=true">Tercero A</a>
+                    <a href="https://docs.google.com/document/d/1P17-RotqSuYNaIcEGzPB-OrbB9i9Wjy-/edit?usp=sharing&ouid=103758885215504875722&rtpof=true&sd=true">Tercero B</a>
+                    <a href="https://docs.google.com/spreadsheets/d/1b5rKh5n4wMJE2ee4zchsJbYguELENOVh/edit?usp=sharing&ouid=103758885215504875722&rtpof=true&sd=true">Tercero C</a>
+                    <a href="https://docs.google.com/spreadsheets/d/1zRQAFSj_jzzxYE__Oo__aY0R4j9XW_M5/edit?usp=sharing&ouid=103758885215504875722&rtpof=true&sd=true">Tercero D</a>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="dropdown-container">
+                <button onclick="toggleDropdown('dropdown4')" class="btn">Bachiller</button>
+                <div id="dropdown4" class="dropdown-content">
+                    <a href="https://docs.google.com/spreadsheets/d/1rB3M2oyHwCurhgN0MA4Hhjz7D_6RFEPC/edit?usp=sharing&ouid=103758885215504875722&rtpof=true&sd=true">Sexto A</a>
+                    <a href="https://docs.google.com/spreadsheets/d/1rB3M2oyHwCurhgN0MA4Hhjz7D_6RFEPC/edit?usp=sharing&ouid=103758885215504875722&rtpof=true&sd=true">Sexto B</a>
+                    <a href="https://docs.google.com/spreadsheets/d/1LtW-tCQemj83gcbPUpIz4As98axC8MW8/edit?usp=sharing&ouid=103758885215504875722&rtpof=true&sd=true">Sexto C</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script>
+    function toggleDropdown(id) {
+        var dropdown = document.getElementById(id);
+        dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+    }
+</script>
+
+</body>
+</html>
